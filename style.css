@@ -1,9 +1,4 @@
 /*==============================
-        GOOGLE FONT
-==============================*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-/*==============================
         RESET
 ==============================*/
 
@@ -183,7 +178,7 @@ nav ul li a.active {
 .hero {
     position: relative;
     height: 850px;
-    background: url("heading\ image.png") center center/cover no-repeat;
+    background: url("heading-image.png") center center/cover no-repeat;
     display: flex;
     align-items: center;
 }
@@ -253,68 +248,6 @@ nav ul li a.active {
 .right-arrow:hover {
     background: #f35525;
 }
-
-/*==============================
-        RESPONSIVE
-==============================*/
-
-@media(max-width:991px) {
-
-    .top-header {
-        display: none;
-    }
-
-    .navbar {
-        flex-direction: column;
-        height: auto;
-        padding: 20px 0;
-        gap: 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 18px;
-    }
-
-    .hero {
-        height: 650px;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-    }
-
-    .location {
-        font-size: 15px;
-    }
-
-}
-
-@media(max-width:768px) {
-
-    .hero {
-        height: 550px;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .left-arrow,
-    .right-arrow {
-        display: none;
-    }
-
-    .visit-btn {
-        display: none;
-    }
-
-}
-
-
-
-
-
 
 /*==============================
         FEATURED SECTION
@@ -446,60 +379,6 @@ nav ul li a.active {
     font-size: 15px;
     margin-top: 5px;
 }
-
-/*==============================
-        RESPONSIVE
-==============================*/
-
-@media(max-width:1100px) {
-
-    .featured-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .featured-card {
-        margin-top: 20px;
-    }
-
-    .featured-icon {
-        left: 20px;
-        bottom: 20px;
-    }
-
-}
-
-@media(max-width:768px) {
-
-    .featured {
-        padding: 80px 0;
-    }
-
-    .featured-content h2 {
-        font-size: 34px;
-    }
-
-    .featured-icon {
-        width: 80px;
-        height: 80px;
-    }
-
-    .featured-icon img {
-        width: 40px;
-    }
-
-    .card {
-        flex-direction: column;
-        text-align: center;
-    }
-
-}
-
-
-
-
-
-
-
 
 /*=====================================
         VIDEO SECTION
@@ -683,67 +562,6 @@ nav ul li a.active {
     background: #f35525;
 }
 
-
-/*=====================================
-        RESPONSIVE
-======================================*/
-
-@media(max-width:991px) {
-
-    .video-box {
-        width: 90%;
-    }
-
-    .counter-wrapper {
-        flex-direction: column;
-    }
-
-    .deal-top {
-        flex-direction: column;
-        gap: 30px;
-        align-items: flex-start;
-    }
-
-    .deal-right {
-        flex-wrap: wrap;
-    }
-
-}
-
-@media(max-width:768px) {
-
-    .video-section {
-        padding: 80px 0 180px;
-    }
-
-    .video-heading h2 {
-        font-size: 34px;
-    }
-
-    .counter-section {
-        padding: 150px 0 80px;
-    }
-
-    .counter-box {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .deal-left h2 {
-        font-size: 34px;
-    }
-
-    .deal-right button {
-        width: 100%;
-    }
-
-}
-
-
-
-
-
-
 /*=====================================
         DEAL DETAILS
 ======================================*/
@@ -847,11 +665,9 @@ nav ul li a.active {
     background: #1e1e1e;
 }
 
-
 /*=====================================
         PROPERTY SECTION
 ======================================*/
-
 .properties {
     padding: 120px 0;
     background: #fff;
@@ -951,57 +767,9 @@ nav ul li a.active {
     background: #f35525;
 }
 
-
-/*=====================================
-        RESPONSIVE
-======================================*/
-
-@media(max-width:1100px) {
-
-    .deal-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .property-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media(max-width:768px) {
-
-    .properties {
-        padding: 80px 0;
-    }
-
-    .property-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .property-heading h2 {
-        font-size: 34px;
-    }
-
-    .top {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
-
-    .property-btn {
-        width: 100%;
-    }
-
-}
-
-
-
-
-
 /*=====================================
         CONTACT SECTION
 ======================================*/
-
 .contact {
     position: relative;
     padding: 120px 0;
@@ -1146,7 +914,6 @@ nav ul li a.active {
     background: #f35525;
 }
 
-
 /*=====================================
             FOOTER
 ======================================*/
@@ -1163,77 +930,219 @@ nav ul li a.active {
     line-height: 28px;
 }
 
+/* ===========================
+      MOBILE RESPONSIVE
+=========================== */
 
-/*=====================================
-        FINAL RESPONSIVE
-======================================*/
+@media (max-width: 991px) {
 
-@media(max-width:1100px) {
+    .container {
+        width: 95%;
+    }
 
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .featured-wrapper,
+    .deal-wrapper,
     .contact-wrapper {
         grid-template-columns: 1fr;
+    }
+
+    .property-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counter-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px) {
+
+    .hero {
+        height: 80vh;
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .featured,
+    .properties,
+    .contact,
+    .deal-details {
+        padding: 70px 0;
+    }
+
+    .property-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-content h2,
+    .deal-left h2,
+    .video-heading h2,
+    .property-heading h2,
+    .contact-title h2 {
+        font-size: 30px;
     }
 
     .contact-box {
         width: 100%;
     }
 
-}
-
-@media(max-width:768px) {
-
-    .contact {
-        padding: 80px 0;
+    .video-box {
+        width: 95%;
     }
 
-    .contact-title h2 {
-        font-size: 32px;
-    }
-
-    .contact-right {
-        padding: 25px;
-    }
-
-    .contact-right button {
+    .deal-right {
+        flex-direction: column;
         width: 100%;
     }
 
-    .map iframe {
-        height: 350px;
+    .deal-right button {
+        width: 100%;
     }
 
-    .footer p {
-        font-size: 14px;
+    .left-arrow,
+    .right-arrow {
+        display: none;
+    }
+
+    .visit-btn {
+        display: none;
     }
 
 }
 
-@media(max-width:576px) {
+@media (max-width:576px) {
 
     .logo {
         font-size: 28px;
     }
 
     .hero h1 {
-        font-size: 30px;
-        line-height: 1.3;
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+    .location {
+        font-size: 14px;
+        padding: 8px 15px;
     }
 
     .featured-content h2,
-    .video-heading h2,
     .deal-left h2,
+    .video-heading h2,
     .property-heading h2,
     .contact-title h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
-    .left-header {
-        display: none;
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 
-    .right-header {
-        justify-content: center;
+    .property-btn,
+    .contact-right button {
         width: 100%;
     }
 
+    .contact-right {
+        padding: 25px;
+    }
+
+    .map iframe {
+        height: 280px;
+    }
+
+    .counter-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .featured-card {
+        margin-top: 20px;
+    }
+
+    .featured-icon {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .featured-icon img {
+        width: 40px;
+    }
+
+    .top-header {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    @media(max-width:768px) {
+
+        .menu-toggle {
+            display: block;
+        }
+
+        nav {
+            position: relative;
+        }
+
+        nav ul {
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            width: 220px;
+            background: #fff;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+            gap: 20px;
+        }
+
+        nav ul.active {
+            display: flex;
+        }
+
+        .navbar {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .visit-btn {
+            display: none;
+        }
+
+    }
 }

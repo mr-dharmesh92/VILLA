@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,28 +36,38 @@
     </div>
     <!--================== NAVBAR ==================-->
     <header>
-        <div class="container navbar">
-            <div class="logo">
-                VILLA
-            </div>
-            <nav>
-                <ul>
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Properties</a></li>
-                    <li><a href="#">Property Details</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="visit-btn">
-                <span>
-                    <i class="fa-solid fa-calendar"></i>
-                </span>
-                Schedule a visit
-            </a>
+    <div class="container navbar">
+
+        <div class="logo">
+            VILLA
         </div>
-    </header>
+
+        <nav>
+
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <ul id="navMenu">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#property-details">Property Details</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+        </nav>
+
+        <a href="#" class="visit-btn">
+            <span>
+                <i class="fa-solid fa-calendar"></i>
+            </span>
+            Schedule a visit
+        </a>
+
+    </div>
+</header>
     <!--================== HERO ==================-->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="overlay"></div>
         <div class="container hero-content">
             <div class="location">
@@ -113,7 +124,7 @@
             </div>
             <div class="featured-card">
                 <div class="card">
-                    <img src="mitter.png">
+                    <img src="mtt.png">
                     <div>
                         <h3>250 m²</h3>
                         <p>Total Flat Space</p>
@@ -218,7 +229,7 @@
     </section>
     <!-- ================= Best Deal Details ================= -->
 
-    <section class="deal-details">
+    <section class="deal-details" id="property-details">
         <div class="container deal-wrapper">
             <!-- Left Card -->
             <div class="deal-info">
@@ -275,7 +286,7 @@
 
     <!-- ================= PROPERTY SECTION ================= -->
 
-    <section class="properties">
+    <section class="properties" id="properties">
         <div class="container">
             <div class="property-heading">
                 <h2>
@@ -410,7 +421,7 @@
 
     <!--================ CONTACT SECTION ================-->
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-overlay"></div>
         <div class="container">
             <div class="contact-title">
@@ -478,6 +489,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
